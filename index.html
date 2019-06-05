@@ -8,11 +8,127 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
         <!-- Javascript -->
         <link rel="stylesheet" href="assets/javascript/app.js">
     </head>
     <body>
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 titleArea">
+                    <img id="gameArt" src="./assets/images/shaken-not-stirred-art.jpg" 
+                    alt="Drawing of martini with olive with text 'Shaken Not Stirred - James Bond'" />
+                    <p id="instructions">
+                            <b>HOW TO PLAY</b> It's simple. To graduate from the typing pool to a full secret agent you have to prove your worth. You have 60 seconds to answer as many questions as you can. The more you score, the higher you graduate. Good luck!
+                    </p>
+                </div>
+                <div class="col-sm-8 textArea">
+                    <div>
+                        <h1>Trivia Game</h1>
+                        <h3>Round One</h3>
+                        <h2>Typing Pool</h2>
+                    </div>
+                    
+                    <div id="timeRemaining">
+                        <h4>Time Remaining: </h4><span id="remainingSeconds"></span>
+                    </div>
+
+                    <!-- Question and Answer Section starts-->
+                    <div>
+                        <p class="question" id="one"> 
+                            What was the name of the first Bond film?
+                        </p>
+                        <p class="answers" id="one">
+                            Dr. No [true], Casino Royale, On Her Majesty's Secret Service
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="two"> 
+                            SPECTRE stands for Special Executive For Counter-Intelligence, Terrorism, Revenge and ... what?
+                        </p>
+                        <p class="answers" id="two">
+                            Extinction, Extortion [true], Examination
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="three"> 
+                            Which film featured London's Millenium Dome?
+                        </p>
+                        <p class="answers" id="three">
+                            Quantum of Solace, The World Is Not Enough [true], A View To A Kill
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="four"> 
+                            What is the codename of Goldfinger's plan to rob Fort Knox?
+                        </p>
+                        <p class="answers" id="four">
+                            Hold The Fort, Gold Run, Operation Grand Slam [true]
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="five"> 
+                            What does the "oo" signify in 007?
+                        </p>
+                        <p class="answers" id="five">
+                            The rank of commander, A license to kill [true], A license to carry firearms
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="six"> 
+                            What is Moonraker?
+                        </p>
+                        <p class="answers id="six">
+                            A space shuttle [true], A laser telescope, A plan to bomb the moon
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="seven"> 
+                            Who sang the title theme for <em>Diamonds Are Forever</em>?
+                        </p>
+                        <p class="answers" id="seven">
+                            Rita Coolidge, Nancy Sinatra, Shirley Bassey [true]
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="eight"> 
+                            What famous landmark does Grace Jones jump from in <em>A View To A Kill</em>?
+                        </p>
+                        <p class="answers" id="eight">
+                            Big Ben, The Empire State Building, The Eiffel Tower [true]
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="nine"> 
+                            Which villain had a manservant called Nick Nack?
+                        </p>
+                        <p class="answers" id="nine">
+                            Francisco Scaramanga, <em>The Man With The Golden Gun</em> [true], Elektra King, <em>The World Is Not Enough</em>, Rosa Klebb, <em>From Russia With Love</em> 
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="question" id="ten"> 
+                            Alongside Bernard Lee and Dame Judi Dench, who else has played "M"?
+                        </p>
+                        <p class="answers" id="ten">
+                            Pedro Armendariz, Anthony Dawson, Robert Brown [true]
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
     </body>
 </html>
