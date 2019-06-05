@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Shaken Not Stirred Trivia Game</title>
+        <title>James Bond Trivia Game</title>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
@@ -15,18 +15,21 @@
     <body>
         <div class="container">
             <div class="row">
+                <!-- Title area with game art and play instructions.-->
                 <div class="col-sm-4 titleArea">
                     <img id="gameArt" src="./assets/images/shaken-not-stirred-art.jpg" 
                     alt="Drawing of martini with olive with text 'Shaken Not Stirred - James Bond'" />
                     <p id="instructions">
-                            <b>HOW TO PLAY</b> It's simple. To graduate from the typing pool to a full secret agent you have to prove your worth. You have 60 seconds to answer as many questions as you can. The more you score, the higher you graduate. Good luck!
+                            <b>HOW TO PLAY</b>&nbsp; It&rsquo;s simple. To graduate from the typing pool to a full secret agent you have to prove your worth. You have 60 seconds to answer as many questions as you can. The more you score, the higher you graduate. Good luck!
                     </p>
                 </div>
+
+                <!-- Main Text Area includes Q-A section -->
                 <div class="col-sm-8 textArea">
                     <div>
                         <h1>Trivia Game</h1>
                         <h3>Round One</h3>
-                        <h2>Typing Pool</h2>
+                        <h2>&ldquo;Typing Pool&rdquo;</h2>
                     </div>
                     
                     <div id="timeRemaining">
@@ -38,8 +41,10 @@
                         <p class="question" id="one"> 
                             What was the name of the first Bond film?
                         </p>
-                        <p class="answers" id="one">
-                            Dr. No [true], Casino Royale, On Her Majesty's Secret Service
+                        <p class="answers">
+                            <input type="radio" name="one" value="drNo" id="true" /> Dr. No &nbsp;
+                            <input type="radio" name="one" value="casinoRoyale" id="false" /> Casino Royale &nbsp;
+                            <input type="radio" name="one" value="majestySecretService" id="false" /> On Her Majesty&rsquo;s Secret Service
                         </p>
                     </div>
 
@@ -47,35 +52,43 @@
                         <p class="question" id="two"> 
                             SPECTRE stands for Special Executive For Counter-Intelligence, Terrorism, Revenge and ... what?
                         </p>
-                        <p class="answers" id="two">
-                            Extinction, Extortion [true], Examination
+                        <p class="answers">
+                            <input type="radio" name="two" value="extinction" id="false" /> Extinction &nbsp;
+                            <input type="radio" name="two" value="extortion" id="true" /> Extortion &nbsp;
+                            <input type="radio" name="two" value="examination" id="false" /> Examination
                         </p>
                     </div>
 
                     <div>
                         <p class="question" id="three"> 
-                            Which film featured London's Millenium Dome?
+                            Which film featured London&rsquo;s Millenium Dome?
                         </p>
-                        <p class="answers" id="three">
-                            Quantum of Solace, The World Is Not Enough [true], A View To A Kill
+                        <p class="answers">
+                            <input type="radio" name="three" value="quantumSolace" id="false" /> Quantum of Solace &nbsp;
+                            <input type="radio" name="three" value="worldIsNotEnough" id="true" /> The World Is Not Enough &nbsp;
+                            <input type="radio" name="three" value="viewToKill" id="false" /> A View To A Kill
                         </p>
                     </div>
 
                     <div>
                         <p class="question" id="four"> 
-                            What is the codename of Goldfinger's plan to rob Fort Knox?
+                            What is the codename of Goldfinger&rsquo;s plan to rob Fort Knox?
                         </p>
-                        <p class="answers" id="four">
-                            Hold The Fort, Gold Run, Operation Grand Slam [true]
+                        <p class="answers">
+                            <input type="radio" name="four" value="holdFort" id="false" /> Hold The Fort &nbsp;
+                            <input type="radio" name="four" value="goldRun" id="false" /> Gold Run &nbsp;
+                            <input type="radio" name="four" value="opGrandSlam" id="true" /> Operation Grand Slam
                         </p>
                     </div>
 
                     <div>
                         <p class="question" id="five"> 
-                            What does the "oo" signify in 007?
+                            What does the &ldquo;oo&rdquo; signify in 007?
                         </p>
-                        <p class="answers" id="five">
-                            The rank of commander, A license to kill [true], A license to carry firearms
+                        <p class="answers">
+                            <input type="radio" name="five" value="rankCommander" id="false" /> The rank of commander &nbsp;
+                            <input type="radio" name="five" value="licenseKill" id="true" /> A license to kill &nbsp;
+                            <input type="radio" name="five" value="licenseFirearms" id="false" /> A license to carry firearms
                         </p>
                     </div>
 
@@ -83,8 +96,10 @@
                         <p class="question" id="six"> 
                             What is Moonraker?
                         </p>
-                        <p class="answers id="six">
-                            A space shuttle [true], A laser telescope, A plan to bomb the moon
+                        <p class="answers">
+                            <input type="radio" name="six" value="spaceShuttle" id="true" /> A space shuttle &nbsp;
+                            <input type="radio" name="six" value="laserTelescope" id="false" /> A laser telescope &nbsp;
+                            <input type="radio" name="six" value="bombMoon" id="false" /> A plan to bomb the moon
                         </p>
                     </div>
 
@@ -92,8 +107,10 @@
                         <p class="question" id="seven"> 
                             Who sang the title theme for <em>Diamonds Are Forever</em>?
                         </p>
-                        <p class="answers" id="seven">
-                            Rita Coolidge, Nancy Sinatra, Shirley Bassey [true]
+                        <p class="answers">
+                            <input type="radio" name="seven" value="ritaCoolidge" id="false" /> Rita Coolidge &nbsp;
+                            <input type="radio" name="seven" value="nancySinatra" id="false" /> Nancy Sinatra &nbsp;
+                            <input type="radio" name="seven" value="shirleyBassey" id="true" /> Shirley Bassey
                         </p>
                     </div>
 
@@ -102,7 +119,9 @@
                             What famous landmark does Grace Jones jump from in <em>A View To A Kill</em>?
                         </p>
                         <p class="answers" id="eight">
-                            Big Ben, The Empire State Building, The Eiffel Tower [true]
+                            Big Ben &nbsp;
+                            The Empire State Building &nbsp;
+                            The Eiffel Tower [true]
                         </p>
                     </div>
 
@@ -111,24 +130,28 @@
                             Which villain had a manservant called Nick Nack?
                         </p>
                         <p class="answers" id="nine">
-                            Francisco Scaramanga, <em>The Man With The Golden Gun</em> [true], Elektra King, <em>The World Is Not Enough</em>, Rosa Klebb, <em>From Russia With Love</em> 
+                            Francisco Scaramanga, <em>The Man With The Golden Gun</em> [true] &nbsp;
+                            Elektra King, <em>The World Is Not Enough</em> &nbsp;
+                            Rosa Klebb, <em>From Russia With Love</em> 
                         </p>
                     </div>
 
                     <div>
                         <p class="question" id="ten"> 
-                            Alongside Bernard Lee and Dame Judi Dench, who else has played "M"?
+                            Alongside Bernard Lee and Dame Judi Dench, who else has played &ldquo;M&rdquo;?
                         </p>
                         <p class="answers" id="ten">
-                            Pedro Armendariz, Anthony Dawson, Robert Brown [true]
+                            Pedro Armendariz &nbsp;
+                            Anthony Dawson &nbsp;
+                            Robert Brown [true]
                         </p>
                     </div>
-
-
                 </div>
 
             </div>
 
         </div>
+
+        <script> </script>
     </body>
 </html>

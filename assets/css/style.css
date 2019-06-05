@@ -1,17 +1,18 @@
 body {
 /* background-color: lightsteelblue; */
-margin: 0;
-background-image: url("./assets/images/");
+    margin: 0;
+    background-image: url("../images/swirl-background-art.png");
+    background-size: cover;
 }
 
 .container {
     width: 90%;
     background-color: linen;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #gameArt {
-    width: 300px;
+    width: 330px;
     height: auto;
 }
 
@@ -35,16 +36,16 @@ background-image: url("./assets/images/");
 
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 52px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 54px;
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     font-size: 40px;
     text-align: center;
     font-style: small-caps;
@@ -65,7 +66,7 @@ h4 {
     font-weight: bold;
     text-align: center;
     font-style: normal;
-    color: blueviolet;
+    color: tomato;
 }
 
 
@@ -74,7 +75,7 @@ h4 {
     font-size: 15px;
     line-height: 2em;
     text-align: left;
-    padding: 30px 60px 0px 30px;
+    padding: 40px 40px 0px 30px;
     color: black;
 }
 
@@ -84,7 +85,7 @@ h4 {
     line-height: 1.5em;
     font-weight: bold;
     text-align: left;
-    padding: 30px 90px 0px 90px;
+    padding: 30px 40px 0px 40px;
     color: midnightblue;
 }
 
@@ -94,5 +95,5 @@ h4 {
     line-height: 1.5em;
     font-weight: normal;
     text-align: left;
-    padding: 0px 90px 0px 120px;
+    padding: 0px 40px 0px 70px;
 }
