@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="assets/javascript/app.js">
     </head>
     <body>
-        
+
         <!-- Game begins with a Start button -->
         <!-- Display Title area and Start button at reset -->
         <button id="#startButton">Click to Play - Round One</button>
@@ -21,7 +21,7 @@
         <!-- This container div will hold the items that will be shown to the player once the startButton is clicked -->
         <div class="container">
             <div class="row">
-                <!-- Title area with game art and play instructions.-->
+                <!-- Left column_Title area with game art and play instructions.-->
                 <div class="col-sm-4 titleArea">
                     <img id="gameArt" src="./assets/images/shaken-not-stirred-art.jpg" 
                     alt="Drawing of martini with olive with text 'Shaken Not Stirred - James Bond'" />
@@ -30,7 +30,7 @@
                     </p>
                 </div>
 
-                <!-- Main Text Area includes Q-A section -->
+                <!-- Right column_Main Text Area includes Q-A section -->
                 <div class="col-sm-8 textArea">
                     <div>
                         <h1>Trivia Game</h1>
@@ -38,129 +38,32 @@
                         <h2>&ldquo;Typing Pool&rdquo;</h2>
                     </div>
                     
-                    <div id="timeRemaining">
+                    <!-- div for countdown timer-->
+                    <div class="timer" id="timeRemaining">
                         <h4>Time Remaining: </h4><span id="remainingSeconds"></span>
                     </div>
 
                     <!-- Question and Answer Section starts-->
-                    <div>
-                        <p class="question" id="one"> 
-                            What was the name of the first Bond film?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="one" value="drNo" id="true" /> Dr. No &nbsp;
-                            <input type="radio" name="one" value="casinoRoyale" id="false" /> Casino Royale &nbsp;
-                            <input type="radio" name="one" value="majestySecretService" id="false" /> On Her Majesty&rsquo;s Secret Service
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="two"> 
-                            SPECTRE stands for Special Executive For Counter-Intelligence, Terrorism, Revenge and ... what?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="two" value="extinction" id="false" /> Extinction &nbsp;
-                            <input type="radio" name="two" value="extortion" id="true" /> Extortion &nbsp;
-                            <input type="radio" name="two" value="examination" id="false" /> Examination
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="three"> 
-                            Which film featured London&rsquo;s Millenium Dome?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="three" value="quantumSolace" id="false" /> Quantum of Solace &nbsp;
-                            <input type="radio" name="three" value="worldIsNotEnough" id="true" /> The World Is Not Enough &nbsp;
-                            <input type="radio" name="three" value="viewToKill" id="false" /> A View To A Kill
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="four"> 
-                            What is the codename of Goldfinger&rsquo;s plan to rob Fort Knox?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="four" value="holdFort" id="false" /> Hold The Fort &nbsp;
-                            <input type="radio" name="four" value="goldRun" id="false" /> Gold Run &nbsp;
-                            <input type="radio" name="four" value="opGrandSlam" id="true" /> Operation Grand Slam
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="five"> 
-                            What does the &ldquo;oo&rdquo; signify in 007?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="five" value="rankCommander" id="false" /> The rank of commander &nbsp;
-                            <input type="radio" name="five" value="licenseKill" id="true" /> A license to kill &nbsp;
-                            <input type="radio" name="five" value="licenseFirearms" id="false" /> A license to carry firearms
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="six"> 
-                            What is Moonraker?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="six" value="spaceShuttle" id="true" /> A space shuttle &nbsp;
-                            <input type="radio" name="six" value="laserTelescope" id="false" /> A laser telescope &nbsp;
-                            <input type="radio" name="six" value="bombMoon" id="false" /> A plan to bomb the moon
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="seven"> 
-                            Who sang the title theme for <em>Diamonds Are Forever</em>?
-                        </p>
-                        <p class="answers">
-                            <input type="radio" name="seven" value="ritaCoolidge" id="false" /> Rita Coolidge &nbsp;
-                            <input type="radio" name="seven" value="nancySinatra" id="false" /> Nancy Sinatra &nbsp;
-                            <input type="radio" name="seven" value="shirleyBassey" id="true" /> Shirley Bassey
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="eight"> 
-                            What famous landmark does Grace Jones jump from in <em>A View To A Kill</em>?
-                        </p>
-                        <p class="answers" id="eight">
-                            Big Ben &nbsp;
-                            The Empire State Building &nbsp;
-                            The Eiffel Tower [true]
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="nine"> 
-                            Which villain had a manservant called Nick Nack?
-                        </p>
-                        <p class="answers" id="nine">
-                            Francisco Scaramanga, <em>The Man With The Golden Gun</em> [true] &nbsp;
-                            Elektra King, <em>The World Is Not Enough</em> &nbsp;
-                            Rosa Klebb, <em>From Russia With Love</em> 
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="question" id="ten"> 
-                            Alongside Bernard Lee and Dame Judi Dench, who else has played &ldquo;M&rdquo;?
-                        </p>
-                        <p class="answers" id="ten">
-                            Pedro Armendariz &nbsp;
-                            Anthony Dawson &nbsp;
-                            Robert Brown [true]
-                        </p>
+                    <div class="quiz" id="questions-section">
                     </div>
                 </div>
-
             </div>
-
         </div>
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         
-        <!-- Script -->
+        <!-- button for player to end the game if they are finished and before the timer has stopped the game -->
+        <button id="finishedButton">Finished!</button>
+
+        <!-- if the time is up a message is displayed to the user and all the current game ends -->
+        <div class="timeUpMessage" id="playerEndMessage"></div>
+
+        <!-- the player is then shown the results of this game -->
+        <div class="gameResults"></div>
+
+
+        <!-- jQuery link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>       
+        <!-- local js file link -->
         <script src="./assets/javascript/app.js"></script>
     </body>
 </html>
