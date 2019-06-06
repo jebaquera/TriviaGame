@@ -14,10 +14,6 @@
     </head>
     <body>
 
-        <!-- Game begins with a Start button -->
-        <!-- Display Title area and Start button at reset -->
-        <button id="#startButton">Click to Play - Round One</button>
-
         <!-- This container div will hold the items that will be shown to the player once the startButton is clicked -->
         <div class="container">
             <div class="row">
@@ -31,20 +27,30 @@
                 </div>
 
                 <!-- Right column_Main Text Area includes Q-A section -->
-                <div class="col-sm-8 textArea">
-                    <div>
-                        <h1>Trivia Game</h1>
-                        <h3>Round One</h3>
-                        <h2>&ldquo;Typing Pool&rdquo;</h2>
+                <div class="col-sm-8">
+                    <div id="#startButton">
+                        <!-- Game begins with a Start button -->
+                        <!-- Display Title area and Start button at reset -->
+                        <button>Click to Play - Round One</button>
                     </div>
-                    
-                    <!-- div for countdown timer-->
-                    <div class="timer" id="timeRemaining">
-                        <h4>Time Remaining: </h4><span id="remainingSeconds"></span>
-                    </div>
+                    <div id="#gameText">
+                        <div>
+                            <h1>Trivia Game</h1>
+                            <h3>Round One</h3>
+                            <h2>&ldquo;Typing Pool&rdquo;</h2>
+                        </div>
+                        
+                        <!-- div for countdown timer-->
+                        <div class="timer" id="timeRemaining">
+                            <h4>Time Remaining: </h4><span id="remainingSeconds"></span>
+                        </div>
 
-                    <!-- Question and Answer Section starts-->
-                    <div class="quiz" id="questions-section">
+                        <!-- Question and Answer Section starts-->
+                        <div class="quiz" id="questions-section">
+                        </div>
+                        <div>
+                            results
+                        </div>
                     </div>
                 </div>
             </div>

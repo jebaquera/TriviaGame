@@ -134,7 +134,7 @@ $("#finishedButton").on("click", function() {
 });
 
 
-//pseudocode
+//Beginning pseudocode
 // Game starts with background [display background art, logo art, instruction text] and Start screen [button]
 
 // When player clicks Start, the Main Text screen displays [Show titling, time remaining stopwatch, and question/answer text]
