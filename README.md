@@ -13,8 +13,11 @@ GitHub:
 The GitHub repo for this game is named “TriviaGame”.
 <br />
 The main folder contains the index.html file and an “assets” folder. Inside the assets folder are three additional folders named as follows:
+<br />
 • css – this folder contains the linked “style.css” file
+<br />
 • images – this folder contains the images referenced in the stylesheet files
+<br />
 • javascript – this folder contains the linked “app.js” file that contains the JavaScript and jQuery instructions
 
 
@@ -24,6 +27,9 @@ The site was built using Bootstrap. The trivia form is populated with multiple c
 The player will have a limited amount of time to finish Round One of the game. The game will end when the allotted time has run out.
 <br />
 The player is prompted that the game is over and is shown the results of the game including:
+<br />
 • Total number of questions answered correctly
+<br />
 • Total number of questions answered incorrectly
+<br />
 • Total number of questions not answered
