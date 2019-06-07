@@ -5,19 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>James Bond Trivia Game</title>
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-        <!-- Javascript -->
-        <link rel="stylesheet" href="assets/javascript/app.js">
+        
     </head>
     <body>
-
         <!-- This container div will hold the items that will be shown to the player once the startButton is clicked -->
-        <div class="container">
+        <!--    <div class="container">
             <div class="row">
-                <!-- Left column_Title area with game art and play instructions.-->
+                
                 <div class="col-sm-4 titleArea">
                     <img id="gameArt" src="./assets/images/shaken-not-stirred-art.jpg" 
                     alt="Drawing of martini with olive with text 'Shaken Not Stirred - James Bond'" />
@@ -25,50 +24,45 @@
                             <b>HOW TO PLAY</b>&nbsp; It&rsquo;s simple. To graduate from the typing pool to a full secret agent you have to prove your worth. You have 30 seconds to answer as many questions as you can. The more you score, the higher you graduate. Good luck!
                     </p>
                 </div>
+            </div>
+        </div> -->
 
-                <!-- Right column_Main Text Area includes Q-A section -->
-                <div class="col-sm-8">
-                    <div id="#startButton">
-                        <!-- Game begins with a Start button -->
-                        <!-- Display Title area and Start button at reset -->
-                        <button>Click to Play - Round One</button>
+        <div class="container">
+            <div class="header">
+                <h1>Shaken Not Stirred</h1>
+                <p id="instructions">
+                    <b>HOW TO PLAY</b>&nbsp; It&rsquo;s simple. To graduate from the typing pool to a full secret agent you have to prove your worth. You have 10 seconds to answer each question. The more answers you get correct before the game ends, the higher you graduate. Good luck!
+                </p>
+            </div>
+
+            <div class="jumbotron">
+                <div class="container">
+                    <div id="game">
+                        <h2>James Bond Trivia Game</h2>
+                        <p id="remaining-time">Remaining Time to Answer: <span id="timer"></span></p>
+                        <p id="question"></p>
                     </div>
-                    <div id="#gameText">
-                        <div>
-                            <h1>Trivia Game</h1>
-                            <h3>Round One</h3>
-                            <h2>&ldquo;Typing Pool&rdquo;</h2>
-                        </div>
-                        
-                        <!-- div for countdown timer-->
-                        <div class="timer" id="timeRemaining">
-                            <h4>Time Remaining: </h4><span id="remainingSeconds"></span>
-                        </div>
 
-                        <!-- Question and Answer Section starts-->
-                        <div class="quiz" id="questions-section">
-                        </div>
-                        <div>
-                            results
-                        </div>
+                    <div id="results">
+                    </div>
+                </div>
+          
+                <div class="row">
+                    <div id="choices">
+                        <button id="start" class="btn btn-info btn-lg">Start Game</button>
+                    <div id="options">
+
                     </div>
                 </div>
             </div>
-        </div>
+          
+        </div> <!-- /container -->
+          
 
-        
-        <!-- button for player to end the game if they are finished and before the timer has stopped the game -->
-        <button id="finishedButton">Finished!</button>
-
-        <!-- if the time is up a message is displayed to the user and all the current game ends -->
-        <div class="timeUpMessage" id="playerEndMessage"></div>
-
-        <!-- the player is then shown the results of this game -->
-        <div class="gameResults"></div>
-
-
-        <!-- jQuery link -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>       
+        <!-- jQuery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- local js file link -->
         <script src="./assets/javascript/app.js"></script>
     </body>
