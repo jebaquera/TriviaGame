@@ -5,7 +5,7 @@ TriviaGame project–
 Shaken Not Stirred. A trivia game for James Bond aficionados.
 <br />
 OVERVIEW:
-The object of the game is to answer as many of the James Bond themed questions within the allotted time of 30 seconds. 
+The object of the game is to answer as many of the James Bond themed questions within the allotted time of 40 seconds. Each question will be displayed to the user for 10 seconds.
 <br />
 The game is labeled as starting at Round One “Typing Pool”. With each high score the player can keep graduating to more challenging levels until they reach secret agent status. <em> Note: This version of the game does not include the aforementioned “higher” levels.</em>
 <br />
